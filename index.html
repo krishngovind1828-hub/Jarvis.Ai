@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050b14"><meta name="description" content="J.A.R.V.I.S. — personal AI interface">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/icon-192.png" type="image/png"><link rel="apple-touch-icon" href="assets/icon-192.png">
+<title>J.A.R.V.I.S. // Personal AI</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"></div><header class="top"><div class="brand"><img src="assets/icon-192.png" alt=""><div><b>J.A.R.V.I.S.</b><small>PERSONAL INTELLIGENCE SYSTEM</small></div></div><div class="live"><i></i><span id="systemStatus">SYSTEM READY</span></div></header>
+<main>
+<section class="hero"><div class="overline">STARK-INSPIRED INTERFACE <span> / </span> NOVA CORE</div><h1>At your service.</h1><p class="intro">Intelligence. Clarity. Control — with your permission.</p>
+<button id="reactorButton" class="reactor" aria-label="Tap to speak"><span class="orbit one"></span><span class="orbit two"></span><img src="assets/jarvis-arc-reactor.png" alt="JARVIS illuminated arc reactor"><span class="tap">TAP TO SPEAK</span></button>
+<div class="metrics"><div><small>CORE</small><b id="coreStatus">ONLINE</b></div><div><small>VOICE</small><b id="voiceStatus">STANDBY</b></div><div><small>LOCAL TIME</small><b id="clock">--:--:--</b></div></div>
+</section>
+<section class="workspace"><div class="section-title"><div><span class="overline">PRIVATE CHANNEL</span><h2>Conversation</h2></div><button id="clearChat" class="ghost">CLEAR</button></div>
+<div id="chatLog" class="chat" aria-live="polite"><article class="msg jarvis"><span>J.A.R.V.I.S. <i>• SYSTEM</i></span><p>Good day. I'm online and ready. How may I assist?</p></article></div>
+<form id="chatForm" class="composer"><input id="messageInput" autocomplete="off" placeholder="Give me an instruction…" aria-label="Message JARVIS"><button type="submit">SEND ↗</button></form>
+<div class="settings">
+<label>LANGUAGE<select id="language"><option value="en">English</option><option value="hi">हिन्दी</option></select></label>
+<label class="check"><input id="speakReplies" type="checkbox" checked> SPOKEN REPLIES</label>
+<label>VOICE<select id="voiceSelect"><option value="auto">Best available male-style voice</option></select></label>
+<button id="testVoice" class="ghost">TEST VOICE</button>
+</div>
+<div class="voice-note" id="voiceNote">Voice quality depends on the voices installed on your device/browser. Select a natural-sounding male voice if available.</div>
+</section>
+<section class="connection"><div><span class="overline">AI CONNECTION</span><h2>Neural link</h2><p>Connect your private Worker URL to enable AI responses.</p></div><div class="urlrow"><input id="workerUrl" placeholder="https://your-worker.workers.dev" aria-label="AI Worker URL"><button id="saveWorker">SAVE</button></div><small>Keep provider API keys in Worker secrets — never in this page or repository.</small></section>
+</main><footer>J.A.R.V.I.S. <span>•</span> NOVA PERSONAL ASSISTANT <span>•</span> V2.0</footer>
+<script src="app.js"></script>
+</body></html>

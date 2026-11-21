@@ -1,0 +1,11 @@
+JARVIS NOVA 2.0 DEPLOY CHECKLIST
+[ ] Upload folder contents to GitHub.
+[ ] Deploy to Cloudflare Pages (root, no build command, output directory .).
+[ ] Deploy worker/index.js as a separate Worker.
+[ ] Add GROQ_API_KEY as a Worker secret.
+[ ] Set ALLOWED_ORIGIN to the exact Pages URL.
+[ ] Paste Worker URL into Neural Link and save.
+[ ] Test text chat.
+[ ] Allow microphone access and test voice input.
+[ ] Test spoken reply and select the best installed device voice.
+[ ] Install the PWA from the browser menu if desired.
